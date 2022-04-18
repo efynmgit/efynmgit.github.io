@@ -86,11 +86,12 @@ body {
   }
   
   #start {
-    background-color: white;
+    background-color: #ECECEC;
     height: 100%;
   }
   
   #start h4 {
     margin-top: 0;
+    color:#5e17eb;
     font-family: 'Poppins', sans-serif;
   }
