@@ -1,0 +1,33 @@
+{
+    "name": "Shoop",
+    "description": "QR code scanner for online shopping",
+    "main": "index.html",
+    "authors": [
+      "Syahadah Ridzuan <syahadahridzuan@gmail.com>"
+    ],
+    "keywords": [
+      "qrcode",
+      "scanner",
+      "scan",
+      "offline",
+      "progressive",
+      "web",
+      "app",
+      "pwa"
+    ],
+    "homepage": "https://github.com/efynmgit/shoop",
+    "private": true,
+    "ignore": [
+      "**/.*",
+      "node_modules",
+      "bower_components",
+      "test",
+      "tests"
+    ],
+    "dependencies": {
+      "jsqrcode": "https://github.com/LazarSoft/jsqrcode.git",
+      "material-design-lite": "^1.2.1",
+      "dialog-polyfill": "^0.4.5",
+      "clipboard": "^1.5.15"
+    }
+  }
