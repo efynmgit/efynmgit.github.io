@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <meta name="description" content="Shoop - shopping at yor fingertips">
+    <meta name="description" content="Shoop - shopping at your fingertips">
     <meta name="keywords" content="qrcode, scanner, scan, offline, progressive, web, app, pwa, free, lightweight, light">
     <meta name="author" content="Syahadah Ridzuan">
     <title>Shoop</title>
@@ -44,8 +44,6 @@
 </head>
 <body>
     <div id="loading" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
-
-    <video id="camera" autoplay>You need a camera in order to use this app.</video>
     <div id="snapshotLimitOverlay">
         <div id="about">
             <h4>Shoop</h4>
@@ -57,21 +55,6 @@
         </div>
     </div>
     <canvas id="snapshot"></canvas>
-    <button id="flipCamera" type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Flip Camera</button>
-    <a id="startButton" type="button" href="scan.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Start Scanning</a>
-
-    <dialog class="mdl-dialog">
-        <h4 class="mdl-dialog__title">Your text</h4>
-        <div class="mdl-dialog__content">
-            <p id="resultsContainer"><span id="result"></span></p>
-            <p>
-                <button type="button" class="copy mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised" data-clipboard-target="#result">Copy</button>
-                <a class="search mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised">Search</a>
-            </p>
-        </div>
-        <div class="mdl-dialog__actions">
-            <button type="button" class="continue mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised mdl-button--colored">Continue</button>
-        </div>
-    </dialog>
+     <a id="startButton" type="button" href="scan.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Start Scanning</a>
 </body>
 </html>
