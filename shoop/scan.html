@@ -4,7 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>Shoop</title>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
     <link rel="manifest" href="manifest.json">
 
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -18,12 +19,6 @@
     <meta property="og:image" content="https://efynmgit.github.io/shoop/assets/images/icons/logowhite" />
     <meta property="og:description" content="Shopping at your fingertips" />
 
-    <script type="text/javascript">
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('service-worker.js');
-        }
-    </script>
-
     <link rel="stylesheet" href="assets/style.css">
     <style>
         body    
@@ -35,13 +30,23 @@
 </head>
 <body>
     <div id="loading" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
-
-    <video id="camera" autoplay>You need a camera in order to use this app.</video>
-    <div id="snapshotLimitOverlay">
-        <div id="about">
-            <h4>Shoop</h4>
-                    </div>
-    </div>
+    <h1>shoop</h1>
+     <video id="preview"></video>
+    <script type="text/javascript">
+      let scanner = new Instascan.Scanner({ video: document.getElementById('preview') });
+      scanner.addListener('scan', function (content) {
+        alert(content);
+      });
+      Instascan.Camera.getCameras().then(function (cameras) {
+        if (cameras.length > 0) {
+          scanner.start(cameras[0]);
+        } else {
+          console.error('No cameras found.');
+        }
+      }).catch(function (e) {
+        console.error(e);
+      });
+    </script>
     <canvas id="snapshot"></canvas>
     <button id="flipCamera" type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Flip Camera</button>
 
