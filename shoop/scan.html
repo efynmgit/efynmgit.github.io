@@ -4,8 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <title>Shoop</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
+
     <link rel="manifest" href="manifest.json">
 
     <meta name="apple-mobile-web-app-capable" content="yes">
@@ -32,21 +31,7 @@
     <div id="loading" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
     <h1>shoop</h1>
      <video id="preview"></video>
-    <script type="text/javascript">
-      let scanner = new Instascan.Scanner({ video: document.getElementById('preview') });
-      scanner.addListener('scan', function (content) {
-        alert(content);
-      });
-      Instascan.Camera.getCameras().then(function (cameras) {
-        if (cameras.length > 0) {
-          scanner.start(cameras[0]);
-        } else {
-          console.error('No cameras found.');
-        }
-      }).catch(function (e) {
-        console.error(e);
-      });
-    </script>
+     <script src="https://raw.githubusercontent.com/mebjas/html5-qrcode/master/minified/html5-qrcode.min.js"></script>
     <canvas id="snapshot"></canvas>
     <button id="flipCamera" type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Flip Camera</button>
 
