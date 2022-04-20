@@ -29,12 +29,15 @@
 </head>
 <body>
     <div id="loading" class="mdl-progress mdl-js-progress mdl-progress__indeterminate"></div>
-    <h1>shoop</h1>
-     <video id="preview"></video>
-     <script src="https://raw.githubusercontent.com/mebjas/html5-qrcode/master/minified/html5-qrcode.min.js"></script>
+
+    <video id="camera" autoplay>You need a camera in order to use this app.</video>
+    <div id="snapshotLimitOverlay">
+        <div id="about">
+            <h1>shoop</h1>
+        </div>
+    </div>
     <canvas id="snapshot"></canvas>
     <button id="flipCamera" type="button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Flip Camera</button>
-
 
     <dialog class="mdl-dialog">
         <h4 class="mdl-dialog__title">Product name</h4>
@@ -42,7 +45,7 @@
             <p id="resultsContainer"><span id="result"></span></p>
             <p>
                 <button type="button" class="copy mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised" data-clipboard-target="#result">Copy</button>
-                <a class="search mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised">Search</a>
+                <a class="search mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--raised">Buy</a>
             </p>
         </div>
         <div class="mdl-dialog__actions">
