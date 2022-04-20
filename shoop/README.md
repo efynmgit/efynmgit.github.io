@@ -10,9 +10,3 @@ Shoop - QR code scanner for online shopping.
 - Shop button - URL leads right to website
 - No ads
 - No tracking
-
-## Build
-
-- `yarn` - package manager
-- `bower install` - package manager
-- `gulp` - for development task automation
