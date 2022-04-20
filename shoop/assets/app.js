@@ -1,3 +1,5 @@
+import dialogPolyfill from 'dialog-polyfill'
+
 window.addEventListener('DOMContentLoaded', function () {
     if (!('mediaDevices' in navigator &&
         'getUserMedia' in navigator.mediaDevices &&
