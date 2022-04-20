@@ -17,6 +17,15 @@ window.addEventListener('DOMContentLoaded', function () {
     const resultDialog = document.querySelector('dialog');
     const resultSearchGo = document.querySelector('dialog a.search');
 
+    var dialog = document.querySelector('dialog');
+    dialogPolyfill.registerDialog(dialog);
+    document.querySelector('#show').onclick = function() {
+        dialog.show();
+        };
+    document.querySelector('#close').onclick = function() {
+        dialog.close();
+        };
+
     // init dialog
     dialogPolyfill.registerDialog(resultDialog);
     resultDialog.querySelector('button.continue').addEventListener('click', function() {
