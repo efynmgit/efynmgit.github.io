@@ -19,20 +19,27 @@ body {
     transform: translateX(-50%) translateY(-50%);
   }
   
-  .mdl-dialog__content {
+  #container {
     text-align: center;
-    font-family: 'Poppins', sans-serif;
+    margin: 0;
   }
   
-  #resultsContainer {
-    overflow-wrap: break-word;
-    font-family: 'Poppins', sans-serif;
-    border: 0;
-    border-radius: 1em;
-    background-color: #dedede;
-    padding: 0.5em 2em;
+  #qr-canvas {
+    margin: auto;
+    width: calc(100% - 20px);
+    max-width: 400px;
   }
   
+  
+#qr-result {
+  font-size: 1.2em;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 700px;
+  background-color: white;
+}
+
+
   #snapshotLimitOverlay {
     position: absolute;
     top: 50%;

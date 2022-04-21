@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel ="stylesheet" href="https://github.com/efynmgit/idp2/blob/main/shoop/assets/style.css" />
+    <title>Shoop</title>
+    <style>
+        body    
+        {
+        font-family: 'Poppins', sans-serif;
+        }
+    </style>
+
+</head>
+<script src="https://rawgit.com/sitepoint-editors/jsqrcode/master/src/qr_packed.js">
+</script>
+<body>
+    <div id="container">
+        <h1>shoop</h1>
+     
+        <canvas hidden="" id="qr-canvas"></canvas>
+    
+        <div id="qr-result" hidden="">
+            <b>Data:</b> <span id="outputData"></span>
+        </div>
+    </div>
+    <script src="./src/qrCodeScanner.js"></script>
+</body>
+</html>
