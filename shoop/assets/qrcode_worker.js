@@ -16,14 +16,14 @@ self.addEventListener('message', function(e) {
 
 function init() {
     self.importScripts(
-        'lib/jsqrcode/src/grid.js',
-        'lib/jsqrcode/src/version.js',
-        'lib/jsqrcode/src/detector.js',
-        'lib/jsqrcode/src/formatinf.js',
-        'lib/jsqrcode/src/errorlevel.js',
-        'lib/jsqrcode/src/bitmat.js',
-        'lib/jsqrcode/src/datablock.js',
-        'lib/jsqrcode/src/bmparser.js',
+        'grid.js',
+        'version.js',
+        'detector.js',
+        'formatinf.js',
+        'errorlevel.js',
+        'bitmat.js',
+        'datablock.js',
+        'bmparser.js',
         'lib/jsqrcode/src/datamask.js',
         'lib/jsqrcode/src/rsdecoder.js',
         'lib/jsqrcode/src/gf256poly.js',
